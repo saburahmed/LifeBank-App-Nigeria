@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: Arial;
-  margin: 0 !important;
+  margin: 0;
+  /* overflow-y: hidden;
+  -ms-overflow-style-y: hidden; */
 }
 
 .container {
@@ -13,7 +15,7 @@
   position: absolute;
   left: 0;
   height: 100vh;
-  width: 65vw;
+  width: 61vw;
   z-index: 0;
   margin: 0;
 }
@@ -23,7 +25,7 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: 35vw;
+  width: 39vw;
   z-index: -1;
   margin: 0;
 }
@@ -32,33 +34,65 @@
   position: absolute;
   right: 0;
   height: 100vh;
-  width: 57vw;
+  width: 64vw;
+  z-index: 1;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: black;
   z-index: 1;
   position: absolute;
   width: 100vw;
   top: 0;
 }
 
+#logo {
+  padding: 2% 0 2% 3%;
+}
+
+#flag {
+  padding: 2% 5% 2% 0;
+}
+
 .content {
-  font-size: 16px;
+  padding-left: 5%;
   color: #fff;
   z-index: 40;
   position: absolute;
-  top: 25vh;
-  width: 20vw;
+  top: 30vh;
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 65px;
+  line-height: 70px;
+  width: 25vw;
+  padding-bottom: 1vh;
 }
 
 .message {
-  font-size: 25px;
-  text-align: justify;
+  font-size: 20px;
+  line-height: 35px;
+  width: 25vw;
+  padding-bottom: 3vh;
+}
+
+.join-btn {
+  font-size: 20px;
+  background-color: #fff;
+  color: #b00300;
+  text-decoration: none;
+  padding: 15px 70px;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.social {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  top: 100%;
+  left: 91.5%;
+  top: 10px;
+  z-index: 20;
 }
